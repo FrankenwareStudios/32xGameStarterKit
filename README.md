@@ -22,7 +22,13 @@ Features
 - Organized coding structure were most objects can be defined just withi gameworld.h file
 - place holder for items to be added soon
 - place holder for quest/story line to be added soon 
-- can use the two MD layers as bitmap layers with parallax
+
+Upcoming
+============
+- Fix sfx not working in real hardware
+- adding a GameEditor for the gameworld.h file that way you don't have to hand code in values
+- add examples for items
+- add examples for quests/story
 
 Tiled plugins
 ============
