@@ -22,6 +22,7 @@ Features
 - Organized coding structure were most objects can be defined just withi gameworld.h file
 - place holder for items to be added soon
 - place holder for quest/story line to be added soon 
+- NOTE: Code is not optimized and may contain some warnings
 
 Upcoming
 ============
