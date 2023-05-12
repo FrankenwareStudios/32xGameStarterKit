@@ -28,7 +28,7 @@ int start_tic;
 int tics;
 
 //input handling
-int buttons;
+int buttons, old_buttons;
 
 //Used as Player's current position.  this is needed to keep all
 //NPC sprites drawing in their map position as you walk/scroll through the map
@@ -175,7 +175,7 @@ void run_game_mainloop()
 		reset_fading();
 
 		//read buttons pushed
-		int old_buttons = buttons;
+		old_buttons = buttons;
 		buttons = I_ReadControls();
 
 
@@ -514,7 +514,7 @@ void battle_screen()
 		draw_sprite(320 - 96, 224 - 32, 96, 32, 0, fg_src, DRAWSPR_OVERWRITE | DRAWSPR_PRECISE | DRAWSPR_VFLIP | DRAWSPR_HFLIP); //test
 
 		//simple test attack animation
-		if (buttons & BT_A)
+		if (buttons & BT_A && !(old_buttons & BT_A))
 		{
 			//Change state of mob for testing
 			//if (currentMob.battleData.battleSprite.current_state != ATTACKING_STATE)
@@ -531,7 +531,7 @@ void battle_screen()
 		}
 
 		//simple test attack animation
-		if (buttons & BT_C)
+		if (buttons & BT_C && !(old_buttons & BT_C))
 		{
 			//Change state
 			if (GAME_WORLD.currentPlayer.battleSprite.current_state != ATTACKING_STATE)
