@@ -175,6 +175,7 @@ void run_game_mainloop()
 		reset_fading();
 
 		//read buttons pushed
+		int old_buttons = buttons;
 		buttons = I_ReadControls();
 
 
@@ -189,7 +190,7 @@ void run_game_mainloop()
 
 
 		//Test sound with hitting a button
-		if (buttons & BT_A && !(GAME_STATE & GAME_BATTLE))
+		if (buttons & BT_A && !(GAME_STATE & GAME_BATTLE) && !(old_buttons & BT_A))
 		{
 			//Starts the simple sound.
 			//Currently hard coded single sound effect.  Will need to implement Sound array
