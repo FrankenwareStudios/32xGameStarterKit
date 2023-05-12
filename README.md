@@ -53,10 +53,10 @@ Building
 
 **Prerequisites**
 
-A posix system and [Chilly Willy's Sega MD/CD/32X devkit](https://github.com/viciious/32XDK/releases) is requred to build this Game Kit.  This does build on Windows WSL2 (Infact this entire game kit was developed within it).  Current version built with this Game Kit was 12.1.0
+A posix system and Chilly Willy's latest DevKit from August 2022 found here - > (http://gendev.spritesmind.net/forum/viewtopic.php?f=7&t=3024) is requred to build this Game Kit.  This does build on Windows WSL2 (Infact this entire game kit was developed within it).  Current version built with this Game Kit was 12.1.0
 
 
-If you're using Windows 10/11, you must also [install WSL 2](https://docs.docker.com/desktop/windows/wsl/) and Linux distribution before attempting to build from VSCode.
+If you're using Windows 10/11, you must also [install WSL 2](https://docs.docker.com/desktop/windows/wsl/).
 
 
 License
