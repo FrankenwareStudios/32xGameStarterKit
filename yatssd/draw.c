@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "32x.h"
+#include "GameDef.h"
 #include "types.h"
 
 #define DRAW_DST_BITS 8
