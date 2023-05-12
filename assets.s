@@ -1,3 +1,5 @@
+.align 4
+
 .text
 .globl _music
 .globl _sfx1
