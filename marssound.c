@@ -46,6 +46,7 @@ int S_PaintChannel4IMA2x(void* mixer, int16_t* buffer, int32_t cnt, int32_t scal
 void S_PaintChannel8(void* mixer, int16_t* buffer, int32_t cnt, int32_t scale) ATTR_DATA_CACHE_ALIGN;
 static void S_SpatializeAt(fixed_t* origin, mobj_t* listener, int* pvol, int* psep) ATTR_DATA_CACHE_ALIGN;
 static void S_Spatialize(mobj_t* mobj, int* pvol, int* psep, getsoundpos_t getpos) ATTR_DATA_CACHE_ALIGN;
+static void S_ClearPCM(void);
 
 #define finesine(x) finesine_[x]
 

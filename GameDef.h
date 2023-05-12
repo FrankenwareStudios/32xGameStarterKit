@@ -616,7 +616,6 @@ typedef enum
 } sfxenum_t;
 
 //needed these to find them
-static void S_ClearPCM(void);
 angle_t R_PointToAngle2(fixed_t x1, fixed_t y1, fixed_t x2, fixed_t y2);
 extern	sfxchannel_t	sfxchannels[SFXCHANNELS];
 extern	const fixed_t		finesine_[5 * FINEANGLES / 4];
