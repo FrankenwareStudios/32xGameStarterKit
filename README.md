@@ -34,7 +34,6 @@ Features
 
 Upcoming
 ============
-- Fix sfx not working in real hardware
 - adding a GameEditor for the gameworld.h file that way you don't have to hand code in values
 - add examples for items
 - add examples for quests/story
