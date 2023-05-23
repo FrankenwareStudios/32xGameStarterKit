@@ -149,8 +149,8 @@ void load_new_map(int mapID, int player_x, int player_y)
 	}
 
 	//set new position for player
-	fpcamera_x = player_x;
-	fpcamera_y = player_y;
+	fpcamera_x = fpmoveinc_x * player_x;
+	fpcamera_y = fpmoveinc_y * player_y;
 	currentMapX_position = player_x;
 	currentMapY_position = player_y;
 	currentPlayerPos_x = currentMapX_position + 128;
