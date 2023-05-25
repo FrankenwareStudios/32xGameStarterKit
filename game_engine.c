@@ -437,6 +437,16 @@ void check_map_collisions()
 		///
 		if (player_collisions(currentPlayerPos_x, currentPlayerPos_y, &tm, &currentGameMap, &collisionLayer) == COLLISION_WARP)
 		{
+			///
+			//Use for testing for warp locations in game
+			///
+			/*char temp[100];
+			sprintf(temp, "mapx: %d", currentMapX_position);
+			display_text(temp, 10, 184);
+			sprintf(temp, "warpx: %d", currentGameMap.warps[1].x);
+			display_text(temp, 10, 164);*/
+			/////
+
 			//Let's see which warp to use (testing location to warp array in map
 			int i;
 			for (i = 0; i < currentGameMap.numWarps; i++)
@@ -446,7 +456,7 @@ void check_map_collisions()
 				{
 					//Still testing, but I would get the map ID from warp information and pull that map from my gamemaps array when i build it, but for the time
 					//I'm testing to warp to 2nd map
-					load_new_map(currentGameMap.warps[i].dest_mapID, currentGameMap.warps[i].dest_x, currentGameMap.warps[i].dest_x);
+					load_new_map(currentGameMap.warps[i].dest_mapID, currentGameMap.warps[i].dest_x, currentGameMap.warps[i].dest_y);
 				}
 			}
 		}
